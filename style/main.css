@@ -1,0 +1,126 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;                 /*creating variables for colors*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*define the limit of the border box*/
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.filme-capa {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/castlevania.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.descricao {
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-top: 10px;   
+}
+
+.botoes {
+    margin-left: 10px;
+}
+
+.botoes .botao {
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.box-filme {
+    height: 90%;
+    width: 90%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 50%;
+    }
+
+}
+
+
